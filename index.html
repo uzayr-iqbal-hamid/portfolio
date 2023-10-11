@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--BoxIcons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--Bootstrap5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Uzayr Iqbal Hamid | Web Developer</title>
+</head>
+<body style="background-color: black;" class="position-relative">
+
+    <!--Background Video-->
+    <video autoplay muted loop>
+        <source src="particles_bg.mp4" type="video/mp4" />
+      </video>
+
+    <div class="top_line"></div>
+    
+    <div class="d-flex flex-wrap flex-row main">
+        <div class="left_line">
+
+        </div>
+        <!--Frame-->
+        <div id="frame">
+            <div id="name" class="display-5">
+                Uzayr Iqbal Hamid<span id="age"> • 19</span>
+                <hr>
+            </div>
+            <div id="title" class="mt-2 fw-lighter">
+                Data-Science Undergrad | Web Developer
+            </div>
+            <section id="options" class="d-inline-block">
+                <i class='bx bxs-circle'></i>
+                <div id="about"><a href="#about-content" style="text-decoration: none; color: #fff">About</a></div>
+                <div id="resume"><a href="#skills-content" style="text-decoration: none; color: #fff">Resume</a></div>
+                <div id="projects"><a href="#projects-content" style="text-decoration: none; color: #fff">Projects</a></div>
+                <div id="certificates"><a href="#certificates-content" style="text-decoration: none; color: #fff">Certificates</a></div>
+                <div id="contact"><a href="#contacts-content" style="text-decoration: none; color: #fff">Contact</a></div>
+            </section>
+            <aside id="content" class="d-flex flex-wrap flex-column fw-light">
+                <h2 id="about-content">About</h2><hr>
+                <img src="profile_img.jpg" alt="profile_img" class="col-4">
+                <hr>
+                Hi. I am Uzayr Iqbal Hamid. I am from Bangalore and I am 19 years old. I am currently pursuing Data science Engineering in SJB Institute Of Technology. I design websites as a hobby and as a career.
+            </aside>
+            <footer>
+                <a href="https://github.com"><i class='bx bxl-github' style='color:#ffffff' ></i></a>
+                <a href="https://twtitter.com"><i class='bx bxl-twitter' style='color:#ffffff' ></i></a>
+                <a href="https://linkedin.com"><i class='bx bxl-linkedin-square' style='color:#ffffff' ></i></a>
+                <a href="https://instagram.com"><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+            </footer>
+            <hr style="color: white; width: 25%;">
+            <div id="copyright">&copy; <em id="date">2023 </em> Uzayr Iqbal Hamid</div>
+        </div>
+
+        <div class="right_line">
+
+        </div>
+    </div>
+
+    <!--jQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#resume").click(function() {
+                $("section i").remove();
+                $("#about").after("<i class='bx bxs-circle'></i>");
+                $("aside").html("<div id='skills'><h2 id='skills-content'>Skills</h2><hr><div class='skill-names' style='margin: 5px;'>• HTML <span class='container'><span class='skills html' style='text-align: right;margin-bottom: 15px; height: 5px; color: white;'></span></span></div><div class='skill-names' style='margin: 5px;'>• CSS <span class='container'><span class='skills css'></span></span></div><div class='skill-names' style='margin: 5px;'>• JavaScript <span class='container'><span class='skills js'></span></span></div><div class='skill-names' style='margin: 5px;'>• jQuery <span class='container'><span class='skills jquery'></span></span></div><div class='skill-names' style='margin: 5px;'>• Bootstrap 5 <span class='container'><span class='skills bootstrap'></span></span></div></div></div><div id='education'><h2 style='margin-top: 10px;'>Education</h2><hr style='width: 50%;'><div class='sjbit'>• SJB Institute Of Technology [2022 - 2026]</div><div class='fw-lighter mb-2 sjbit'>Data Science & Computer Science Engineering</div><div class='mt-3 nhpuc'>• New Horizon PU College [2020 - 2022]</div><div class='fw-lighter nhpuc'>Physics, Chemistry, Math, Computers</div>");
+            });
+
+            $("#contact").click(function() {
+                $("section i").remove();
+                $("#certificates").after("<i class='bx bxs-circle'></i>");
+                $("aside").html("<h2 id='contacts-content'>Contacts</h2><hr><div id='email'>• Email id: <a href='https://gmail.com'>hamiduzayr@gmail.com</a></div><div id='instagram'>• Instagram: <a href='https://instagram.com'>uh_uzayr</a></div><div id='github'>• Github: <a href='https://github.com'>uzayr-iqbal-hamid</a></div><div id='twitter'>• Twitter: <a href='https://twitter.com'>UzayrHamid</a></div>");
+            });
+
+            $("#projects").click(function() {
+                $("section i").remove();
+                $("#projects").before("<i class='bx bxs-circle'></i>");
+                $("aside").html("<h2 id='projects-content'>Projects</h2><hr>");
+                //yet to add projects ;TODO: add projects to my portfolio
+            });
+
+            $("#certificates").click(function() {
+                $("section i").remove();
+                $("#certificates").before("<i class='bx bxs-circle'></i>");
+                $("aside").html("<h2 id='certificates-content'>Certificates</h2><hr><div class='d-flex flex-column'><img src='https://media.licdn.com/dms/image/C560BAQGm1w3AuRkr6A/company-logo_200_200/0/1673082933710/unschool_it_logo?e=1704931200&v=beta&t=pIdMgjZ5vmVRgiKtq9jZX9TZPyPtYtY1qlK1IVG3Yxw' alt='img' class='col-1'><span class='course-name' style='margin-top: 10px;'>• Basic <strong>Java & Python</strong> [Aug 2023]</span><div class='fw-lighter platform' style='padding-left: 10px;'>Unschool</div><div class='fw-light skills-acquired' style='padding-left: 10px;'><strong>Skills:</strong> Java • Python</div></div>");
+                //yet to add certificates ;TODO: add certificates to my portfolio
+            });
+
+            $("#about").click(function() {
+                $("section i").remove();
+                $("#about").before("<i class='bx bxs-circle'></i>");
+                $("aside").html("<h2 id='about-content'>About</h2><hr><img src='profile_img.jpg' alt='profile_img' class='col-4'><hr>Hi. I am Uzayr Iqbal Hamid. I am from Bangalore and I am 19 years old. I am currently pursuing Data science Engineering in SJB Institute Of Technology. I design websites as a hobby and as a career.");
+            });
+        });
+    </script>
+
+    <!--JavaScript-->
+    <script src="index.js"></script>
+</body>
+</html>

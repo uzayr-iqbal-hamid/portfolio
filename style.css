@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    z-index: 0;
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -5;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.top_line {
+    width: 100%;
+    height: 25px;
+}
+.left_line {
+    flex-basis: 2%;
+}
+
+#frame {
+    flex-basis: 96%;
+    margin-bottom: 25px;
+    padding: 15px;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.right_line {
+    flex-basis: 2%;
+}
+
+section {
+    margin-left: 15px;
+    margin-top: 25vh;
+}
+section div{
+    width: 5vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition-duration: 0.5s ;
+}
+section div:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+aside {
+    height: 80vh; /*485px*/
+    margin-right: 15px;
+    width: 50%;
+    padding-top: 15vh;
+    padding-right: 50px;
+    padding-left: 50px;
+    float: right;
+}
+aside img{
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+#about, #resume, #contact, #projects, #certificates {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+#about:hover, #resume:hover, #contact:hover, #projects:hover, #certificates:hover {
+    transform: translateY(-7%);
+}
+
+.resume{
+    display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 20%;
+    margin-top: 29vh; /*185px*/
+    margin-left: 100px;
+    text-align: center;
+}
+
+footer a{
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    align-items: center;
+    padding-top: 5%;
+}
+footer a:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#age{
+    font-size: 3vh;
+}
+
+#skills{
+    width: 50vh;
+}
+.skills{
+    text-align: right;
+    margin-bottom: 15px; 
+    height: 5px; 
+    color: white;
+}
+.container{
+    display: inline-block;
+    height: 5px;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+}
+
+.html, .css, .js, .jquery, .bootstrap{
+    display: inline-block;
+}
+
+.html{
+    width: 98%;
+    background-color: #fff;
+}
+.css{
+    width: 85%;
+    background-color: #fff;
+}
+.js {
+    width: 65%;
+    background-color: #fff;
+}
+.jquery {
+    width: 30%;
+    background-color: #fff;
+}
+.bootstrap{
+    width: 80%;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 600px){
+    section, aside{
+        width: 100%;
+    }
+    section{
+        margin-left: 2vh;
+    }
+    footer{
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1300px) {
+	footer{
+        align-items: center;
+        justify-content: space-evenly;
+        vertical-align: middle;
+        text-align: center;
+        width: 40%;
+        margin-top: 10vh;
+    }
+    footer a{
+        padding-top: 3%;
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1550px){
+    aside{
+        size: 15vh;
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        margin-top: 6vh;
+    }
+    footer{
+        margin-top: 45vh;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media only screen and (min-width: 1232px) and (max-width: 1299px){
+    footer{
+        width: 30%;
+        margin-top: 25vh;
+    }
+}
+
+@media only screen and (min-width: 330px) and (max-width: 608px){
+    #name{
+        font-size: 4vh; 
+    }
+    #age{
+        font-size: 2vh;
+    }
+    #title{
+        font-size: 2vh;
+    }
+    section{
+        margin-top: 6vh;
+    }
+    section a{
+        font-size: 2vh;
+    }
+
+    #about-content, #skills-content, #certificates-content, #projects-content, #contacts-content, #education h2{
+        font-size: 3vh;
+    }
+    #copyright{
+        display: inline-block;
+        font-size: 2vh;
+    }
+    footer a{
+        width: 2vh;
+        height: 2vh;
+        font-size: 2vh;
+    }
+    .sjbit, .nhpuc{
+        font-size: 2vh;
+    }
+    .cover, .book{
+        flex-basis: 100%;
+    }
+    aside{
+        margin-right: 0;
+        padding-top: 5vh;
+        padding-left: 15px;
+        font-size: 2vh;
+    }
+    .skill-names{
+        margin: 0px;
+    }
+    .skills{
+        margin-bottom: 0;
+    }
+    .course-name, .skills-acquired, .platform{
+        font-size: 2vh;
+    }
+
+}
