@@ -126,10 +126,14 @@ footer a:hover{
     /* background-color: rgba(255, 255, 255, 0.4); */
 }
 
-.html, .css, .js, .jquery, .bootstrap{
+.html, .css, .js, .jquery, .bootstrap, .react{
     display: inline-block;
 }
 
+.react{
+    width: 65%;
+    background-color: #fff;
+}
 .html{
     width: 98%;
     background-color: #fff;
